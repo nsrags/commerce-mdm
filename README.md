@@ -1,6 +1,6 @@
 # commerce-mdm
 ## Commerce Master Data Management
-  	This is Project/Application which deals in managing Master Data such as Catalog/Customer/Order.The primary audience for this Application will be 
+   *This is Project/Application which deals in managing Master Data such as Catalog/Customer/Order.The primary audience for this Application will be*
   - Business Users - Using it as Merchandising tool for Preview and Approval of changes
   - Developers - Using it as Admin tool 
   - Customer Support Representatives - Using it as Customer Support Center interface for addressing Customer queries/changes
