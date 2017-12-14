@@ -1,6 +1,7 @@
 package com.mdm.commerce.catalog.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
 @Data
 public class Sku {
 
+    @Id
     private String id;
     private String name;
     private String description;

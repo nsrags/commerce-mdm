@@ -19,9 +19,6 @@
     </bean>
 
 
-    <mongo:repositories base-package="com.mdm.commerce.catalog.repository"
-    mongo-template-ref="mongoTemplate"/>
-
     <mongo:repositories base-package="com.mdm.commerce.admin.repository" mongo-template-ref="mongoTemplate"/>
 
 
