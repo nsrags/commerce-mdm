@@ -11,7 +11,10 @@
         http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
 
-    <mongo:mongo id="mongo" host="localhost" port="27017"/>
+    <context:property-placeholder location="classpath:env-config/${env}/application.properties"/>
+
+
+    <mongo:mongo id="mongo" host="${mongo.host.name}" port="${mongo.host.port}"/>
 
     <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg ref="mongo"/>

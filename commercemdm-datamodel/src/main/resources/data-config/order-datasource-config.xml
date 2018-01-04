@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/data/jpa"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <context:property-placeholder location="classpath:env-config/${env}/application.properties"/>
+
+
+        <bean id="orderDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+            <property name="driverClass" value="${mysql.driver.class}"/>
+            <property name="jdbcUrl" value="${mysql.host.url}"/>
+            <property name="user" value="${mysql.host.username}"/>
+            <property name="password" value="${mysql.host.password}"/>
+            <property name="minPoolSize" value="${mysql.mnin.pool.size}"/>
+            <property name="maxPoolSize" value="${mysql.max.pool.size}"/>
+        </bean>
+
+
+    <bean id="orderJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="orderDataSource"/>
+    </bean>
+
 
 </beans>

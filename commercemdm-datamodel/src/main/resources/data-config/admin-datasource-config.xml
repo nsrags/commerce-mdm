@@ -10,6 +10,9 @@
        http://www.springframework.org/schema/data/mongo
         http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
+    <context:property-placeholder location="classpath:env-config/${env}/application.properties"/>
+
+
 
     <mongo:mongo id="mongo" host="localhost" port="27017"/>
 

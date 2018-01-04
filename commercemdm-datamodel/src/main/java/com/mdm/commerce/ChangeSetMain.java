@@ -19,6 +19,7 @@ import java.util.UUID;
 public class ChangeSetMain {
     public static void main(String[] args) {
 
+        System.setProperty("env","dev");
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("data-config/admin-datasource-config.xml");
         ChangeSetRepository changeSetRepository = context.getBean("changeSetRepository", ChangeSetRepository.class);
 

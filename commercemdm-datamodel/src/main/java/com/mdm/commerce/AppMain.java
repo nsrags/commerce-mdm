@@ -32,7 +32,7 @@ public class AppMain
 
     public static void main( String[] args )
     {
-
+        System.setProperty("env","dev");
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("data-config/catalog-datasource-config.xml");
         CategoryRepository categoryRepository = context.getBean("categoryRepository",CategoryRepository.class);
         ProductRepository productRepository = context.getBean("productRepository",ProductRepository.class);

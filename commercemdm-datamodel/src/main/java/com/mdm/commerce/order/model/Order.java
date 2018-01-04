@@ -1,7 +1,7 @@
 package com.mdm.commerce.order.model;
 
 import lombok.Data;
-import org.javamoney.moneta.CurrencyUnitBuilder;
+import org.springframework.data.annotation.Id;
 
 import javax.money.CurrencyUnit;
 import java.math.BigDecimal;
