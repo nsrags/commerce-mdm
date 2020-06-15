@@ -10,7 +10,7 @@
 
   <properties>
     <springdata.mongo.lib.version>1.9.2.RELEASE</springdata.mongo.lib.version>
-    <spring.core.version>4.3.2.RELEASE</spring.core.version>
+    <spring.core.version>4.3.19.RELEASE</spring.core.version>
     <springdata.jpa.version>2.0.1.RELEASE</springdata.jpa.version>
     <mysql.client.lib.version>5.1.41</mysql.client.lib.version>
     <lombak.lib.version>1.16.10</lombak.lib.version>
