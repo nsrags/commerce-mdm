@@ -12,7 +12,7 @@
     <springdata.mongo.lib.version>1.9.2.RELEASE</springdata.mongo.lib.version>
     <spring.core.version>4.3.2.RELEASE</spring.core.version>
     <springdata.jpa.version>2.0.1.RELEASE</springdata.jpa.version>
-    <mysql.client.lib.version>5.1.41</mysql.client.lib.version>
+    <mysql.client.lib.version>8.0.28</mysql.client.lib.version>
     <lombak.lib.version>1.16.10</lombak.lib.version>
     <moneta.lib.version>1.1</moneta.lib.version>
     <c3p0.lib.version>0.9.1.2</c3p0.lib.version>
