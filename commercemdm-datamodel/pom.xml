@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <springdata.mongo.lib.version>1.9.2.RELEASE</springdata.mongo.lib.version>
+    <springdata.mongo.lib.version>3.3.5</springdata.mongo.lib.version>
     <spring.core.version>4.3.2.RELEASE</spring.core.version>
     <springdata.jpa.version>2.0.1.RELEASE</springdata.jpa.version>
     <mysql.client.lib.version>5.1.41</mysql.client.lib.version>
